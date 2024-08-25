@@ -22,7 +22,7 @@ A React application that fetches and displays images from a remote API. It inclu
 
 # Installation
   - # Clone the repository:
-    git clone https://github.com/yourusername/faker-images-app.git
+    git clone https://github.com/radhaponnusamy/ChangisReactChallenge.git
 - # Navigate to the project directory:
     cd faker-images-app
 - # Install dependencies:
