@@ -1,0 +1,18 @@
+/* Footer styling */
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+.rc-border-bottom {
+    border-bottom: 1px solid #ccc !important;
+}
+
+.rc-border-light-grey, .rc-hover-border-light-grey:hover, .rc-border-light-gray, .rc-hover-border-light-gray:hover {
+    border-color: #f1f1f1 !important;
+}
+.rc-padding-16 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+}

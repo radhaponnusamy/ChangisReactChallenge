@@ -1,0 +1,70 @@
+/* Navigation bar styling */
+.rc-bar {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 2000; /* Ensure it sits above other content */
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-container {
+    position: relative;
+    z-index: 1000; /* Ensure it is on top of other content */
+}
+
+.rc-bar-item {
+    padding: 16px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 400;
+    display: inline-block; /* Ensure items are aligned in a row */
+}
+
+.rc-bar-item:hover {
+    background-color: #f1f1f1;
+    border-radius: 4px;
+}
+
+/* Logout button should match the style of other nav items */
+.rc-bar-item.logout-button {
+    cursor: pointer;
+}
+
+.rc-bar-item.logout-button:hover {
+    background-color: #f1f1f1;
+    border-radius: 4px;
+}
+
+.rc-bar .rc-right {
+    float: right;
+    display: flex; /* Use flexbox to align items in a row */
+    align-items: center; /* Center items vertically */
+}
+
+.rc-hide-small {
+    display: none; /* Hide on small screens */
+}
+
+@media (min-width: 768px) {
+    .rc-hide-small {
+        display: flex; /* Show on larger screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .rc-bar {
+        font-size: 14px;
+    }
+
+    .rc-bar-item {
+        padding: 10px;
+    }
+
+    .rc-bar .rc-right {
+        flex-direction: column; /* Stack items vertically on small screens */
+        float: none; /* Remove float on small screens */
+    }
+}

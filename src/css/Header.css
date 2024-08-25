@@ -1,0 +1,93 @@
+/* Header styling */
+header {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+header img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+header .rc-display-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+h3 {
+    font-size: 24px;
+}
+
+
+
+.rc-display-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    max-width: 1500px;margin-left: auto;margin-right: auto;
+}
+.rc-card, .rc-card-2 {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.rc-wide {
+    letter-spacing: 4px;
+}
+.rc-center {
+    text-align: center !important;
+}
+.rc-margin-top {
+    margin-top: 16px !important;
+}
+.rc-text-light-grey, .rc-hover-text-light-grey:hover, .rc-text-light-gray, .rc-hover-text-light-gray:hover {
+    color: #f1f1f1 !important;
+}
+.rc-opacity-min {
+    opacity: 0.75;
+}
+.rc-image {
+    width: 100%;
+    height: auto;
+}
+.rc-black, .rc-hover-black:hover {
+    color: #fff !important;
+    background-color: #000 !important;
+}
+
+.rc-top {
+    top: 0;
+}
+.rc-top, .rc-bottom {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.rc-padding {
+    padding: 10px;
+}
+
+.rc-black {
+    color: black;
+}
+
+.rc-opacity-min {
+    opacity: 0.7;
+}
+
+
+
+@media (min-width: 768px) {
+    .rc-hide-small {
+        display: inline;
+font-weight: 700;
+    }
+}

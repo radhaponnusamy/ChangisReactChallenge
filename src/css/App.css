@@ -1,0 +1,70 @@
+/* General styles for the app */
+body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+
+
+/* Controls styling */
+.controls {
+    position: sticky;
+    top: 60px; /* Space for the fixed navbar */
+    background-color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    z-index: 1000; /* Ensure it sits above image gallery */
+    margin-bottom: 20px;
+}
+
+.controls .search {
+    flex: 1 1 80%;
+}
+
+.controls .sort {
+    flex: 0 0 20%;
+}
+
+.controls input,
+.controls select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.controls input:focus,
+.controls select:focus {
+    border-color: #007bff;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+
+
+
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .controls {
+        flex-direction: column;
+    }
+
+    .controls .search,
+    .controls .sort {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
